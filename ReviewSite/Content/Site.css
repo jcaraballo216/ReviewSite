@@ -22,3 +22,10 @@ select,
 textarea {
     max-width: 280px;
 }
+/*.jumbotron {
+    text-align: center;
+    background-image: url('../Images/phone.jpg');
+    background-size:auto;
+    background-repeat:no-repeat;
+    opacity:1.5;
+}*/
