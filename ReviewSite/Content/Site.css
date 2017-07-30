@@ -22,10 +22,36 @@ select,
 textarea {
     max-width: 280px;
 }
-/*.jumbotron {
+.jumbotron {
+    background-image: url('../Images/images (2).jpg');
     text-align: center;
-    background-image: url('../Images/phone.jpg');
-    background-size:auto;
-    background-repeat:no-repeat;
-    opacity:1.5;
-}*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1.5;
+}
+.links {
+    border:2px solid black;
+    height:325px;
+    text-align:center;
+    margin:30px;
+    padding-left:15px
+    
+}
+#samsung {
+    background-color:blue;
+    color:ghostwhite;
+    margin-left:75px;
+     
+}
+.navbar.navbar-inverse.navbar-fixed-top {
+    color:white;
+    background-color:blue;
+    display:block;
+}
+.navbar.navbar-inverse.navbar-fixed-top a:hover{
+    display:block;
+    background-color:black;
+}
+.col-md-3 {
+    border:solid blue;
+}
