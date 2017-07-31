@@ -10,11 +10,14 @@ namespace ReviewSite.Models
     public class Review
     {
         //Setting the properties
+        //Migration performed
+        //Added Date Display Data Annotation
         [Key]
         public int ReviewID { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public string Description { get; set; }
+        [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
         public int Price { get; set; }
 

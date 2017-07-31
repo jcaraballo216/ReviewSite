@@ -1,12 +1,14 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:aliceblue;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,6 +24,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Inserted pic for jumbotron*/
 .jumbotron {
     background-image: url('../Images/images (2).jpg');
     text-align: center;
@@ -29,6 +33,7 @@ textarea {
     background-repeat: no-repeat;
     opacity: 1.5;
 }
+/*class links made to seperate boxes*/
 .links {
     border:2px solid black;
     height:325px;
@@ -52,6 +57,19 @@ textarea {
     display:block;
     background-color:black;
 }
+/*set class for review index*/
 .col-md-3 {
-    border:solid blue;
+    border: solid blue;
+    margin-bottom: 4px;
+    padding: 25px;
+    font-size: 25px;
+    background-image: url('../Images/phone.jpg');
+    background-repeat:no-repeat;
+    background-position:right;
 }
+.review {
+    background-color:gray;
+    margin:25px;
+    padding:25px;
+}
+

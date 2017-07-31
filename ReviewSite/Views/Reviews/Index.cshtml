@@ -11,27 +11,30 @@
 </p>
 
 
-<div class="row">
+@*Made class to represent in CSS*@
+
+
+<div class="row review">
 
     @foreach (var item in Model)
     {
         <div class="col-md-3 thumbnail">
             <div>
-                @Html.DisplayFor(modelItem => item.Category.Brand)
+               Brand: @Html.DisplayFor(modelItem => item.Category.Brand)
             </div>
             <div>
-                @Html.DisplayFor(modelItem => item.Make)
+               Make: @Html.DisplayFor(modelItem => item.Make)
             </div>
             <div>
-                @Html.DisplayFor(modelItem => item.Model)
+               Model: @Html.DisplayFor(modelItem => item.Model)
             </div>
             <div>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
+                Release Date:@Html.DisplayFor(modelItem => item.ReleaseDate)
             </div>
             <div>
-                @Html.DisplayFor(modelItem => item.Price)
+               Price: @Html.DisplayFor(modelItem => item.Price)
             </div>
-            <p>
+            <p id="button">
 
                 @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) 
 
