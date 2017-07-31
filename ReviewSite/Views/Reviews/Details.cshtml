@@ -5,60 +5,38 @@
 }
 
 <h2>Details</h2>
+<hr />
+    <div class="card">
+        <div class="card-block">
+        </div>
 
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Brand)
-        </dt>
+        <div>
+           Brand: @Html.DisplayFor(model => model.Category.Brand)
+        </div>
+        <br />
+        <div>
+           Make: @Html.DisplayFor(model => model.Make)
+        </div>
+        <br />
+        <div>
+           Model: @Html.DisplayFor(model => model.Model)
+        </div>
+        <br />
+        <div>
+           Description: @Html.DisplayFor(model => model.Description)
+        </div>
+        <br />
+        <div>
+           Release Date: @Html.DisplayFor(model => model.ReleaseDate)
+        </div>
+        <br />
+        <div>
+           Price: @Html.DisplayFor(model => model.Price)
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Brand)
-        </dd>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Make)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Make)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Model)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Model)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReleaseDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReleaseDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-    </dl>
-</div>
+<p>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")

@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color:aliceblue;
+    background-color:cornflowerblue;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -36,7 +36,7 @@ textarea {
 /*class links made to seperate boxes*/
 .links {
     border:2px solid black;
-    height:325px;
+    height:200px;
     text-align:center;
     margin:30px;
     padding-left:15px
@@ -55,7 +55,7 @@ textarea {
 }
 .navbar.navbar-inverse.navbar-fixed-top a:hover{
     display:block;
-    background-color:black;
+    background-color:dodgerblue;
 }
 /*set class for review index*/
 .col-md-3 {
@@ -64,12 +64,18 @@ textarea {
     padding: 25px;
     font-size: 25px;
     background-image: url('../Images/phone.jpg');
-    background-repeat:no-repeat;
-    background-position:right;
-}
-.review {
-    background-color:gray;
-    margin:25px;
-    padding:25px;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-style: italic;
+    margin-top: 25px;
+    
 }
 
+.a {
+    text-align:center;
+    color:white;
+}
+.card {
+    color:black;
+    background-color:white;
+}

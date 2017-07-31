@@ -18,29 +18,30 @@
 
     @foreach (var item in Model)
     {
-        <div class="col-md-3 thumbnail">
-            <div>
-               Brand: @Html.DisplayFor(modelItem => item.Category.Brand)
-            </div>
-            <div>
-               Make: @Html.DisplayFor(modelItem => item.Make)
-            </div>
-            <div>
-               Model: @Html.DisplayFor(modelItem => item.Model)
-            </div>
-            <div>
-                Release Date:@Html.DisplayFor(modelItem => item.ReleaseDate)
-            </div>
-            <div>
-               Price: @Html.DisplayFor(modelItem => item.Price)
-            </div>
-            <p id="button">
+        <div class="col-md-3 img-thumbnail">
+          
+                <div>
+                    Brand: @Html.DisplayFor(modelItem => item.Category.Brand)
+                </div>
+                <div>
+                    Make: @Html.DisplayFor(modelItem => item.Make)
+                </div>
+                <div>
+                    Model: @Html.DisplayFor(modelItem => item.Model)
+                </div>
+                <div>
+                    Release Date:@Html.DisplayFor(modelItem => item.ReleaseDate)
+                </div>
+                <div>
+                    Price: @Html.DisplayFor(modelItem => item.Price)
+                </div>
+                <p id="button">
 
-                @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) 
+                    @Html.ActionLink("Details", "Details", new { id = item.ReviewID })
 
-            </p>
+                </p>
+         
         </div>
-
     }
 </div>
 
